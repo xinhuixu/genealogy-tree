@@ -1,0 +1,20 @@
+Xinhui Xu
+Fall 2017
+Assignment 8 Task 1
+
+1. Preorder: D E I A G C J B F K H
+2. Inorder: I E G A C J D F B H K
+3. Postorder: I G J C A E F H K B D
+4. Level order: D E B I A F K G C H J
+
+5. 0:D 1:E 2:B 3:I 4:A 5:F 6:K
+   7:_ 8:_ 9:G 10:C 11:_ 12:_ 13:H 14:_
+   15:_ 16:_ 17:_ 18:_ 19:_ 20:_ 21:_ 22:J
+
+6: 0(A 6 2) 1(B 5 10) 2(C -1 9) 3(D 4 1) 4(E 8 0) 5(F -1 -1)
+   6(G -1 -1) 7(H -1 -1) 8(I -1 -1) 9(J -1 -1) 10(K 7 -1)
+
+7. Because the elements are not in order, we have to visit
+   every node in the worst case. fin() is O(N).
+
+8. O(N) because we have to visit every element.
