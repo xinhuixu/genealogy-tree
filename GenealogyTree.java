@@ -80,7 +80,7 @@ public class GenealogyTree<T> implements AncestryTree<T>{
 	    } else {
 		//		System.out.println("p_i: " + pater_i);
 		tree[pater_i] = lchild;
-		System.out.println("New LEFT of " + target + ": "+tree[pater_i]);
+		//System.out.println("New LEFT of " + target + ": "+tree[pater_i]);
 	    }
 	}
     }
@@ -111,7 +111,7 @@ public class GenealogyTree<T> implements AncestryTree<T>{
 		System.out.println("tree is full.");
 	    } else {
 		tree[mater_i] = rchild;
-		System.out.println("New RIGHT of "+target+": "+tree[mater_i]);
+		//		System.out.println("New RIGHT of "+target+": "+tree[mater_i]);
 	    }
 	}	
     }
@@ -161,16 +161,16 @@ public class GenealogyTree<T> implements AncestryTree<T>{
 	    return ret;
 	}//size is now at least 1
 
-	ret += "0:" + getCoTU() + " \n";
+	ret += /*"0:" +*/ getCoTU() + " \n";
 	int i = 1;
 	int level = 2; //tracks when to break to newline
 	while ( i<DEF_CAP ){
 	    
 	    if (tree[i] != null) {
-		ret += i + ":" + tree[i] + " ";
+		ret += /*i + ":" +*/ tree[i] + " ";
 	    }//displays _ for null elements
 	    else {
-		ret += i + ":_ ";
+		ret += /*i + ":*/"_ ";
 	    }
 	    
 	    if (i == level){

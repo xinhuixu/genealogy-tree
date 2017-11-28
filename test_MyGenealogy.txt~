@@ -1,0 +1,18 @@
+xinhui$ java MyGenealogy
+My fictional genealogy tree.
+ My ancestors all have numerical code names, as they were secret agents.
+My genealogy contains 15 members:
+0:Xinhui 
+1:1 2:2 
+3:3 4:4 5:5 6:6 
+7:7 8:8 9:9 10:10 11:11 12:12 13:13 14:14 
+
+13 was found (true): true
+Offspring of 5 is (2): 2
+Xinhui appear at the root: true
+Your paternal grandfather is (3): 3
+Your maternal grandmother is (6): 6
+Your paternal great-grandfather is (7): 7
+Your maternal great-grandmother is (14): 14
+3 and 5 are in-laws (true):true
+3 and 2 are in-laws (false):false

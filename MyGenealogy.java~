@@ -1,0 +1,25 @@
+/* FILE NAME: MyGenealogy.java
+ * WHO: Xinhui Xu
+ * WHEN: Fall 2017
+ * WHAT: Assignment 8 Task 2
+*/
+
+public class MyGenealogy{
+
+    public static void main(String[] args){
+	System.out.println("My fictional genealogy tree.\n
+My ancestors all have numerical code names, they were secret agents.");
+	GenealogyTree<String> t2 = new GenealogyTree<String>("Xinhui");
+	t2.setPater("Xinhui", "1");
+	t2.setMater("Xinhui", "2");
+	t2.setPater("1", "3"); t2.setMater("1", "4");
+	t2.setPater("2", "5"); t2.setMater("2", "6");
+	t2.setPater("3", "7"); t2.setMater("3", "8");
+	t2.setPater("4", "9"); t2.setMater("4", "10");
+	t2.setPater("5", "11"); t2.setMater("5", "12");
+	t2.setPater("6", "13"); t2.setMater("6", "14");
+	System.out.println(t2);
+    }
+
+
+}

@@ -1,0 +1,39 @@
+xinhui$ java GenealogyTree
+----------BEGIN TESTING----------
+t1: My genealogy contains 1 members:
+0:A 
+1:_ 2:_ 
+3:_ 4:_ 5:_ 6:_ 
+7:_ 8:_ 9:_ 10:_ 11:_ 12:_ 13:_ 14:_ 
+
+t1's Center Of Universe: A
+----------Adding more elements-----------
+New LEFT of A: B
+New RIGHT of A: C
+New LEFT of B: D
+New RIGHT of C: E
+New LEFT of C: F
+New RIGHT of B: G
+New LEFT of D: H
+New RIGHT of F: I
+New LEFT of E: J
+New RIGHT of E: K
+t1: My genealogy contains 11 members:
+0:A 
+1:B 2:C 
+3:D 4:G 5:F 6:E 
+7:H 8:_ 9:_ 10:_ 11:_ 12:I 13:J 14:K 
+
+-----------Testing appears(T )----------
+Is B in t1? true
+Is Z in t1? false
+-----------Testing getters----------
+t1.getPater("B"): D
+t1.getMater("E"): K
+t1.getMater("K"): null
+t1.getMater("Z"): null
+----------Testing inLaws----------
+t1.inLaws("D", "F"): true
+t1.inLaws("H", "K"): false
+t1.inLaws("H", "C"): false
+t1.inLaws("Y", "Z"): false
